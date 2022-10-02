@@ -1,0 +1,38 @@
+.headerContainer {
+    display: flex;
+    flex-direction: column;
+    z-index: 1;
+}
+
+.logo {
+    position: absolute;
+    display: flex;
+    width: 100%;
+    justify-content: center;
+    padding: 15px 0;
+}
+
+.header {
+    font-family: "ABCWhyteInktrap-Regular";
+    height: 50px;
+    width: 100%;
+    top: 0;
+    position: fixed;
+    display: flex;
+    justify-content: space-between;
+    overflow: visible;
+}
+
+.edgeContainer {
+    margin-top: 50px;
+    display: flex;
+    align-content: row;
+    width: 100%;
+    position: fixed;
+}
+
+.edgeTop {
+    border-top: 1px solid rgba(255, 255, 255, 0.15);
+    height: 50px;
+    flex-grow: 1;
+}

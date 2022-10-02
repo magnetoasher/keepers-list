@@ -1,0 +1,109 @@
+body {
+  margin: 0 0;
+  background-image: url('./assets/background/bg-image.jpg');
+  background-size: cover;
+  /* moves the background image down */
+  background-position: center bottom;
+  background-color: transparent;
+  color: white;
+  font-family: 'ABCWhyteInktrap-Regular';
+  overflow-y: hidden;
+}
+
+:root {
+  --green: #c0fb50;
+}
+
+@font-face {
+  font-family: 'ABCWhyteInktrap-Bold';
+  src: local('ABCWhyteInktrap-Bold'),
+    url('./assets/fonts/ABCWhyte/ABCWhyteInktrap-Bold.woff') format('woff');
+  font-weight: bold;
+}
+
+@font-face {
+  font-family: 'ABCWhyteInktrap-Regular';
+  src: local('ABCWhyteInktrap-Regular'),
+    url('./assets/fonts/ABCWhyte/ABCWhyteInktrap-Regular.woff') format('woff');
+  font-weight: regular;
+}
+
+@font-face {
+  font-family: 'IBMPlexMono-Regular';
+  src: local('IBMPlexMono-Regular'),
+    url('./assets/fonts/IBM_Plex_Mono/IBMPlexMono-Regular.ttf')
+      format('truetype');
+  font-weight: regular;
+}
+
+@font-face {
+  font-family: 'IBMPlexMono-Bold';
+  src: local('IBMPlexMono-Bold'),
+    url('./assets/fonts/IBM_Plex_Mono/IBMPlexMono-Bold.ttf') format('truetype');
+  font-weight: regular;
+}
+
+/* Container for all pages */
+.container {
+  width: 100%;
+  max-width: 500px;
+  margin: 0 auto;
+  margin-top: 100px;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  overflow-y: scroll;
+  -ms-overflow-style: none; /* Internet Explorer 10+ */
+  scrollbar-width: none; /* Firefox */
+}
+
+.container::-webkit-scrollbar {
+  display: none; /* Safari and Chrome */
+}
+
+/* Containter for the page content */
+.content {
+  margin: 60px 0;
+  padding: 0 10px;
+  display: grid;
+  row-gap: 25px;
+  justify-items: center;
+}
+
+.modalContainer {
+  position: absolute;
+  width: 100%;
+  background-color: rgba(0, 0, 0, 0.5);
+  backdrop-filter: blur(32px);
+  /* modal should be behind the header  */
+  z-index: -1;
+}
+
+/* Space between buttons */
+.formFooterContainer {
+  width: 100%;
+  max-width: 400px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+.form {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  max-width: 400px;
+  /* Spacing between each question */
+  row-gap: 25px;
+}
+
+/* For random spacing needs */
+.spacer {
+  height: 5px;
+}
+
+/* For the bottom of the form */
+.footer {
+  height: 100px;
+}

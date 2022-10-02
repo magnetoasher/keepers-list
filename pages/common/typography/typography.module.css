@@ -1,0 +1,53 @@
+.title {
+  font-family: 'ABCWhyteInktrap-Bold';
+  font-size: 42px;
+  font-weight: 700;
+  text-align: center;
+  line-height: 0.8;
+  color: white;
+}
+
+.orange {
+  color: rgba(245, 132, 31, 1);
+}
+
+.primary {
+  font-family: 'ABCWhyteInktrap-Regular';
+  font-size: 16px;
+  font-weight: 400;
+  color: white;
+}
+
+.secondary {
+  font-family: 'IBMPlexMono-Regular';
+  font-size: 13px;
+  font-weight: 500;
+  letter-spacing: -0.005em;
+  text-transform: uppercase;
+  color: white;
+  /* font-feature-settings: 'zero' on; */
+}
+
+.secondaryBlack {
+  font-family: 'IBMPlexMono-Bold';
+  font-size: 13px;
+  font-weight: 500;
+  text-transform: uppercase;
+  color: black;
+  /* font-feature-settings: 'zero' on; */
+}
+
+.primaryCenter {
+  font-family: 'ABCWhyteInktrap-Regular';
+  font-size: 16px;
+  font-weight: 400;
+  text-align: center;
+}
+
+.green {
+  color: #c0fb50;
+}
+
+.red {
+  color: #ee2233;
+}

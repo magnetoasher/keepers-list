@@ -1,0 +1,34 @@
+.connectSocialsContainer {
+  height: 140px;
+  width: 100%;
+  max-width: 400px;
+  display: flex;
+  flex-direction: column;
+  border: 1px solid rgba(255, 255, 255, 0.15);
+  border-radius: 5px;
+}
+
+.connectSocialsButton {
+  flex-grow: 1;
+  background-color: transparent;
+  border: none;
+  display: flex;
+  flex-direction: row;
+  padding: 0 20px;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+}
+
+.borderBottom {
+  border-bottom: 1px solid rgba(255, 255, 255, 0.15);
+}
+
+.borderBottomGreen {
+  border-bottom: 1px solid #c0fb50;
+}
+
+.connectSocialsContainerGreen {
+  border: 1px solid #c0fb50;
+  border-radius: 5px;
+}

@@ -1,0 +1,97 @@
+.choiceContainer {
+  width: 100%;
+  max-width: 400px;
+  display: flex;
+  flex-direction: column;
+}
+
+/* //////////// RADIO SELECT /////////// */
+
+.format {
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+  height: 25px;
+}
+
+.highlight {
+  background-color: aqua;
+}
+
+/* ///////// DO NOT EDIT /////////// */
+
+.radioLabelContainer {
+  margin: 0 10px;
+}
+
+.radioContainer {
+  cursor: pointer;
+  position: relative;
+  display: flex;
+  flex-direction: row;
+}
+
+.radio {
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+
+  width: 14px;
+  height: 14px;
+  background-color: transparent;
+  border: 1px solid rgba(255, 255, 255, 0.15);
+  border-radius: 50%;
+  cursor: pointer;
+  position: relative;
+}
+
+.radio:checked {
+  width: 14px;
+  height: 14px;
+  border: none;
+  box-shadow: 0 0 0 1px var(--green);
+}
+
+/* indicator */
+.radioInnerCircle {
+  position: absolute;
+  width: 8px;
+  height: 8px;
+  margin-left: 8px;
+  margin-top: 6px;
+  background-color: var(--green);
+  border-radius: 50%;
+  display: none;
+}
+
+/* in the container, when the input is checked, add this to .radioInnerCircle and show the indicator */
+.radioContainer input:checked ~ .radioInnerCircle {
+  display: block;
+}
+
+/* ////////// TEXT AREA ////////// */
+
+.textArea {
+  appearance: none;
+  height: 130px;
+  background-color: transparent;
+  border: 1px solid rgba(255, 255, 255, 0.15);
+  border-radius: 5px;
+  color: white;
+  font-family: 'ABCWhyteInktrap-Regular';
+  font-size: 16px;
+  padding: 10px;
+}
+
+/* ////////// TEXT ////////// */
+
+.text {
+  appearance: none;
+  background-color: transparent;
+  border: 1px solid rgba(255, 255, 255, 0.15);
+  border-radius: 5px;
+  color: white;
+  font-family: 'ABCWhyteInktrap-Regular';
+  font-size: 16px;
+  padding: 10px;
+}

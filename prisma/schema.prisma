@@ -1,0 +1,30 @@
+// This is your Prisma schema file,
+// learn more about it in the docs: https://pris.ly/d/prisma-schema
+
+// regen shcema ==> npx prisma generate
+// dummy data ==> npx prisma studio
+
+generator client {
+  provider = "prisma-client-js"
+}
+
+datasource db {
+  provider = "postgresql"
+  url      = env("DATABASE_URL")
+}
+
+model User {
+  id        String @default(cuid()) @id
+  discord   String @unique
+  twitter   String @unique
+  bioA      String
+  bioB      String
+  bioC      String
+  bioD      String
+  bioE      String
+  worldA    String
+  worldB    String
+  worldC    String
+  referralA String
+  referralB String
+}

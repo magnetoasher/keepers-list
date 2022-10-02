@@ -1,0 +1,57 @@
+.aboutButton {
+  padding: 0 20px;
+  background-color: transparent;
+  border: none;
+  border-right: 1px solid rgba(255, 255, 255, 0.15);
+  /* border-bottom: 1px solid rgba(255, 255, 255, 0.15); */
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+
+.connectButton {
+  padding: 0 20px;
+  background-color: transparent;
+  border: none;
+  border-left: 1px solid rgba(255, 255, 255, 0.15);
+  /* border-bottom: 1px solid rgba(255, 255, 255, 0.15); */
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+
+/* Filled button */
+.primary {
+  padding: 0 25px;
+  height: 55px;
+  min-width: 150px;
+  background-color: white;
+  border: none;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 5px;
+  -webkit-clip-path: polygon(100% 0, 100% 70%, 87% 100%, 0 100%, 0 0);
+  clip-path: polygon(100% 0, 100% 70%, 87% 100%, 0 100%, 0 0);
+}
+
+.primaryDisabled {
+  background-color: #505050;
+}
+
+/* Transparent button */
+.secondary {
+  padding: 0 10px;
+  height: 55px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 5px;
+  background-color: transparent;
+  border: none;
+  position: relative;
+}
+
+.secondaryBorder {
+  position: absolute;
+}
